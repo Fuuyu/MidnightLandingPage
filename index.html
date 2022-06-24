@@ -1,777 +1,751 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="favicon_io/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="favicon_io/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="favicon_io/favicon-16x16.png"
-    />
-    <link rel="manifest" href="/site.webmanifest" />
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/solid.css">
-    <link
-        rel="stylesheet"
-        type="text/css"
-        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png" />
+      <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png" />
+      <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png" />
+      <link rel="manifest" href="/site.webmanifest" />
+      <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/solid.css" />
+      <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+         rel="stylesheet"
       />
-      <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
-      integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
-      crossorigin="anonymous"
-    />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Midnight Restaurant</title>
-  </head>
-  <body>
+      <link
+         rel="stylesheet"
+         href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+         integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+         crossorigin="anonymous"
+      />
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+      <link rel="stylesheet" href="style.css" />
+      <title>Midnight Restaurant</title>
+   </head>
+   <body>
+      <!-- Header style -->
+      <header id="menu">
+         <div id="header-menu" class="d-flex justify-content-between container align-items-center">
+            <h1>
+               <a href="#"><img src="./img/logo/logo.png" alt="" width="100px" height="100px" /></a>
+            </h1>
+            <nav>
+               <input type="checkbox" id="check" class="d-none" />
+               <label for="check" class="checkbtn">
+                  <i class="uis uis-bars"></i>
+               </label>
+               <ul>
+                  <li><a href="#introduction">Home</a></li>
+                  <li><a href="#criterion">Service</a></li>
+                  <li><a href="#about-us">About us</a></li>
+                  <li><a href="#commnent">Rating</a></li>
+                  <li><a href="#FAQ">FAQ</a></li>
+                  <li><a href="#contract">Contract</a></li>
+               </ul>
+            </nav>
+            <div class="dropdown">
+               <a
+                  class="btn dropdown-toggle"
+                  href="#"
+                  role="button"
+                  id="dropdownMenuLink"
+                  data-toggle="dropdown"
+                  aria-expanded="false"
+               >
+                  Language
+               </a>
+               <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <a class="dropdown-item" href="#">Vietnamese</a>
+                  <a class="dropdown-item" href="#">English</a>
+               </div>
+            </div>
+         </div>
+      </header>
 
-    <!-- Header style -->
-    <header id="menu">
-      <div id="header-menu" class="d-flex justify-content-between container align-items-center">
-        <h1>
-          <a href="#"
-            ><img src="./img/logo/logo.png" alt="" width="100px" height="100px"
-          /></a>
-        </h1>
-        <nav>
-            <input type="checkbox" id="check" class="d-none">
-            <label for="check" class="checkbtn">
-              <i class="uis uis-bars"></i>
-            </label>
-            <ul>
-              <li><a href="#introduction">Home</a></li>
-              <li><a href="#criterion">Service</a></li>
-              <li><a href="#about-us">About us</a></li>
-              <li><a href="#commnent">Rating</a></li>
-              <li><a href="#FAQ">FAQ</a></li>
-              <li><a href="#contract">Contract</a></li>
-            </ul>
-        </nav>
-        <div class="dropdown">
-          <a
-            class="btn dropdown-toggle"
-            href="#"
-            role="button"
-            id="dropdownMenuLink"
-            data-toggle="dropdown"
-            aria-expanded="false"
-          >
-            Language
-          </a>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-            <a class="dropdown-item" href="./vi.html">Vietnamese</a>
-            <a class="dropdown-item" href="./eng.html">English</a>
-          </div>
-        </div>
+      <!-- thumbnail -->
+      <div id="thumbnail" class="container-fluid d-flex">
+         <div class="thumbnail-wrapper">
+            <img src="img/thumbnail.jpg" alt="" class="img-fluid" />
+            <div class="text">
+               <p>Midnight Restaurant</p>
+               <span>We serve for your passion, your joy in eating is also our happiness 😊</span>
+            </div>
+         </div>
       </div>
-    </header>
+      <!-- Introduction -->
+      <section id="introduction">
+         <div class="d-flex justify-content-between container">
+            <div class="row">
+               <div class="col-12 col-md-5 order-2 order-md-1">
+                  <img src="./img/midnight1.jpeg" alt="midnight1" class="img-fluid" />
+               </div>
+               <div class="col-12 col-md-7 order-md-2">
+                  <h2 class="font-weight-bold">About the Midnight Restaurant</h2>
+                  <p class="pt-4">
+                     Midnight Restaurant is a restaurant that owns a cozy culinary space with a delicate combination of
+                     Vietnamese and foreign cultures.
+                  </p>
+                  <p>
+                     With its central location, convenient transportation and professional staff, Midnight is proud to
+                     offer year-end parties with all the criteria: private, close, quality food menu and warm wine
+                     glasses, in a space with a little excitement but still enough silence for you not to ignore any
+                     emotions. Which of my own !
+                  </p>
+               </div>
+            </div>
+         </div>
+      </section>
 
-    <!-- thumbnail -->
-    <div id="thumbnail" class="container-fluid d-flex">
-      <div class="thumbnail-wrapper">
-        <img src="img/thumbnail.jpg" alt="" class="img-fluid" />
-        <div data-aos="zoom-in-up" data-aos-delay="150" data-aos-duration="2000" class="text">
-          <p>Midnight Restaurant</p>
-          <span 
-            >We serve for your passion, your joy in eating is also our happiness 😊</span
-          >
-        </div>
-      </div>
-    </div>
-    <!-- Introduction -->
-    <section id="introduction">
-      <div class="d-flex justify-content-between container">
-        <div class="row">
-          <div data-aos="fade-right" data-aos-delay="250" data-aos-duration="1500" class="col-12 col-md-5 order-2 order-md-1">
-            <img src="./img/midnight1.jpeg" alt="midnight1" class="img-fluid" />
-          </div>
-          <div data-aos="fade-left" data-aos-delay="250" data-aos-duration="1500" class="col-12 col-md-7 order-md-2">
-            <h2 class="font-weight-bold">About the  Midnight Restaurant</h2>
-            <p class="pt-4">
-                Midnight Restaurant is a restaurant that owns a cozy culinary space with a delicate combination of Vietnamese and foreign cultures.
-            </p>
-            <p>With its central location, convenient transportation and professional staff, Midnight is proud to offer year-end parties with all the criteria: private, close, quality food menu and warm wine glasses, in a space with a little excitement but still enough silence for you not to ignore any emotions. Which of my own !</p>
-          </div>
-        </div>
-      </div>
-    </section>
+      <!-- criterion -->
+      <section id="criterion">
+         <div class="container mt-5">
+            <div class="d-flex justify-content-center text-center row align-items-center">
+               <div class="col-12">
+                  <span class="rainbow-text">Service</span>
+                  <h4 class="font-weight-bold">Choose which service you enjoy the most !</h4>
+               </div>
+               <div class="col-9 col-md-6 col-lg-4">
+                  <div class="criterion-style">
+                     <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="icon icon-tabler icon-tabler-friends mt-2"
+                        width="44"
+                        height="44"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="#00abfb"
+                        fill="none"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                     >
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <circle cx="7" cy="5" r="2" />
+                        <path d="M5 22v-5l-1 -1v-4a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4l-1 1v5" />
+                        <circle cx="17" cy="5" r="2" />
+                        <path d="M15 22v-4h-2l2 -6a1 1 0 0 1 1 -1h2a1 1 0 0 1 1 1l2 6h-2v4" />
+                     </svg>
+                     <div class="criterion-info">
+                        <p class="mt-2 font-weight-bolder order-number">01</p>
+                        <p class="font-weight-bolder">Reservation service</p>
+                        <span class="font-weight-normal"
+                           >Customers can always book on the website or call via hotline so that our staff can arrange
+                           in advance.
+                        </span>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-9 col-md-6 col-lg-4">
+                  <div class="criterion-style">
+                     <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="icon icon-tabler icon-tabler-backpack mt-2"
+                        width="44"
+                        height="44"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="#00abfb"
+                        fill="none"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                     >
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M11 7h2a6 6 0 0 1 6 6v6a1 1 0 0 1 -1 1h-12a1 1 0 0 1 -1 -1v-6a6 6 0 0 1 6 -6z" />
+                        <path d="M10 7v-1a2 2 0 1 1 4 0v1" />
+                        <path d="M10 15h4" />
+                     </svg>
+                     <div class="criterion-info">
+                        <p class="mt-2 font-weight-bolder order-number">02</p>
+                        <p class="font-weight-bolder">"Takeaway food" service</p>
+                        <span class="font-weight-normal"
+                           >Customers can go directly to the restaurant to order the item to bring back or after eating
+                           and then order more.
+                        </span>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-9 col-md-6 col-lg-4">
+                  <div class="criterion-style">
+                     <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="icon icon-tabler icon-tabler-award mt-2"
+                        width="44"
+                        height="44"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="#00abfb"
+                        fill="none"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                     >
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <circle cx="12" cy="9" r="6" />
+                        <polyline points="9 14.2 9 21 12 19 15 21 15 14.2" transform="rotate(-30 12 9)" />
+                        <polyline points="9 14.2 9 21 12 19 15 21 15 14.2" transform="rotate(30 12 9)" />
+                     </svg>
+                     <div class="criterion-info">
+                        <p class="mt-2 font-weight-bolder order-number">03</p>
+                        <p class="font-weight-bolder">On-demand party booking service</p>
+                        <span class="font-weight-normal"
+                           >Get a party for customers: wedding party, team - building party, evening gala party,
+                           birthday party ,...
+                        </span>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-9 col-md-6 col-lg-4">
+                  <div class="criterion-style">
+                     <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="icon icon-tabler icon-tabler-car mt-2"
+                        width="44"
+                        height="44"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="#00abfb"
+                        fill="none"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                     >
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <circle cx="7" cy="17" r="2" />
+                        <circle cx="17" cy="17" r="2" />
+                        <path d="M5 17h-2v-6l2 -5h9l4 5h1a2 2 0 0 1 2 2v4h-2m-4 0h-6m-6 -6h15m-6 0v-5" />
+                     </svg>
+                     <div class="criterion-info">
+                        <p class="mt-2 font-weight-bolder order-number">04</p>
+                        <p class="font-weight-bolder">Door-to-door food delivery service</p>
+                        <span class="font-weight-normal"
+                           >Our store accepts orders according to the menu that you choose directly via hotline
+                           0978266712
+                        </span>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-9 col-md-6 col-lg-4">
+                  <div class="criterion-style">
+                     <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="icon icon-tabler icon-tabler-meat mt-2"
+                        width="44"
+                        height="44"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="#00abfb"
+                        fill="none"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                     >
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M13.62 8.382l1.966 -1.967a2 2 0 1 1 3.414 -1.415a2 2 0 1 1 -1.413 3.414l-1.82 1.821" />
+                        <ellipse transform="rotate(45 8.025 16.475)" cx="8.025" cy="16.475" rx="7" ry="3" />
+                        <path d="M7.5 16l1 1" />
+                        <path
+                           d="M12.975 21.425c3.905 -3.906 4.855 -9.288 2.121 -12.021c-2.733 -2.734 -8.115 -1.784 -12.02 2.121"
+                        />
+                     </svg>
+                     <div class="criterion-info">
+                        <p class="mt-2 font-weight-bolder order-number">05</p>
+                        <p class="font-weight-bolder">Direct catering</p>
+                        <span class="font-weight-normal"
+                           >Customers will come directly to the restaurant and be served by our staff with the best
+                           quality of service
+                        </span>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-9 col-md-6 col-lg-4">
+                  <div class="criterion-style">
+                     <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="icon icon-tabler icon-tabler-eye-check mt-2"
+                        width="44"
+                        height="44"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="#00abfb"
+                        fill="none"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                     >
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <circle cx="12" cy="12" r="2" />
+                        <path
+                           d="M12 19c-4 0 -7.333 -2.333 -10 -7c2.667 -4.667 6 -7 10 -7s7.333 2.333 10 7c-.42 .736 -.858 1.414 -1.311 2.033"
+                        />
+                        <path d="M15 19l2 2l4 -4" />
+                     </svg>
+                     <div class="criterion-info">
+                        <p class="mt-2 font-weight-bolder order-number">06</p>
+                        <p class="font-weight-bolder">Bar area</p>
+                        <span class="font-weight-normal"
+                           >If the customer finishes eating and wants to drink, you can come to our bar in a variety of
+                           categories.
+                        </span>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
 
-    <!-- criterion -->
-    <section id="criterion">
-      <div class="container mt-5">
-        <div class="d-flex justify-content-center text-center row align-items-center">
-          <div class="col-12">
-            <span class="rainbow-text">Service</span>
-            <h4 class="font-weight-bold">Choose which service you enjoy the most !</h4>
-          </div>
-          <div data-aos="fade-right" data-aos-easing="ease-in-sine" data-aos-delay="200" data-aos-duration="1500" class="col-9 col-md-6 col-lg-4">
-            <div class="criterion-style">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="icon icon-tabler icon-tabler-friends mt-2"
-                width="44"
-                height="44"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="#00abfb"
-                fill="none"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                <circle cx="7" cy="5" r="2" />
-                <path
-                  d="M5 22v-5l-1 -1v-4a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4l-1 1v5"
-                />
-                <circle cx="17" cy="5" r="2" />
-                <path
-                  d="M15 22v-4h-2l2 -6a1 1 0 0 1 1 -1h2a1 1 0 0 1 1 1l2 6h-2v4"
-                />
-              </svg>
-              <div class="criterion-info">
-                <p class="mt-2 font-weight-bolder order-number">01</p>
-                <p class="font-weight-bolder">Reservation service</p>
-                <span class="font-weight-normal"
-                  >Customers can always book on the website or call via hotline so that our staff can arrange in advance.
-                </span>
-              </div>
+      <!-- why choose us -->
+      <section id="why-choose-us" class="container">
+         <div class="row">
+            <div class="col-12 col-md-6">
+               <div>
+                  <h4 class="font-weight-bold">What Midnight Restaurant have ?</h4>
+                  <ul>
+                     <li>
+                        <h5>10 years of experience</h5>
+                        <p>
+                           With more than 10 years in maintaining the restaurant, we will bring you the darkest
+                           experience ever.
+                        </p>
+                     </li>
+                     <li>
+                        <h5>High ability to learn</h5>
+                        <p>
+                           The attitude is always hard to learn, have the will to strive at work, receive the opinions
+                           of customers and do not be afraid of difficulties.
+                        </p>
+                     </li>
+                     <li>
+                        <h5>Beautiful view</h5>
+                        <p>
+                           With airy space, super shimmering so that you can enjoy posing and owning for yourself the
+                           most impressive virtual life photos.
+                        </p>
+                     </li>
+                  </ul>
+                  <div class="li-style-1 li-style"><p>01</p></div>
+                  <div class="li-style-2 li-style"><p>02</p></div>
+                  <div class="li-style-3 li-style"><p>03</p></div>
+               </div>
             </div>
-          </div>
-          <div data-aos="fade-right" data-aos-easing="ease-in-sine" data-aos-delay="200" data-aos-duration="2000" class="col-9 col-md-6 col-lg-4">
-            <div class="criterion-style">
-              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-backpack mt-2" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00abfb" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                <path d="M11 7h2a6 6 0 0 1 6 6v6a1 1 0 0 1 -1 1h-12a1 1 0 0 1 -1 -1v-6a6 6 0 0 1 6 -6z" />
-                <path d="M10 7v-1a2 2 0 1 1 4 0v1" />
-                <path d="M10 15h4" />
-              </svg>
-              <div class="criterion-info">
-                <p class="mt-2 font-weight-bolder order-number">02</p>
-                <p class="font-weight-bolder">"Takeaway food" service</p>
-                <span class="font-weight-normal"
-                  >Customers can go directly to the restaurant to order the item to bring back or after eating and then order more.
-                </span>
-              </div>
+            <div data-aos="flip-up" data-aos-delay="200" data-aos-duration="1000" class="chef1 col-12 col-md-6">
+               <img src="img/people/chef.jpg" alt="my perfect chef of us" class="img-fluid" />
             </div>
-          </div>
-          <div data-aos="fade-right" data-aos-easing="ease-in-sine" data-aos-delay="200" data-aos-duration="2500" class="col-9 col-md-6 col-lg-4">
-            <div class="criterion-style">
-              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-award mt-2" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00abfb" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                <circle cx="12" cy="9" r="6" />
-                <polyline points="9 14.2 9 21 12 19 15 21 15 14.2" transform="rotate(-30 12 9)" />
-                <polyline points="9 14.2 9 21 12 19 15 21 15 14.2" transform="rotate(30 12 9)" />
-              </svg>
-              <div class="criterion-info">
-                <p class="mt-2 font-weight-bolder order-number">03</p>
-                <p class="font-weight-bolder">On-demand party booking service</p>
-                <span class="font-weight-normal"
-                  >Get a party for customers: wedding party, team - building party, evening gala party, birthday party ,...
-                </span>
-              </div>
+         </div>
+      </section>
+      <!-- about us -->
+      <section id="about-us">
+         <div class="container">
+            <div class="row align-items-center justify-content-center">
+               <div class="col-12">
+                  <div class="text-center">
+                     <span class="rainbow-text">About us</span>
+                     <h4 class="font-weight-bold">Meet the people behind the delicious food of our restaurant</h4>
+                  </div>
+               </div>
+               <div class="col-8 col-md-6 col-lg-3 social-info-people">
+                  <div class="info-people">
+                     <div class="info">
+                        <img src="img/people/people.png" alt="chef1" class="mx-auto d-block mb-2" height="200px" />
+                        <div class="name">
+                           <p class="font-weight-bold">Tran Anh Dung</p>
+                           <p>Chef</p>
+                        </div>
+                        <div class="social">
+                           <ul class="d-flex">
+                              <li>
+                                 <div class="box">
+                                    <a href="#">
+                                       <img src="img/logo/facebook.png" alt="" class="d-block mx-auto" />
+                                    </a>
+                                 </div>
+                              </li>
+                              <li>
+                                 <div class="box">
+                                    <a href="#">
+                                       <img src="img/logo/instagram.png" alt="" class="d-block mx-auto" />
+                                    </a>
+                                 </div>
+                              </li>
+                              <li>
+                                 <div class="box">
+                                    <a href="#">
+                                       <img src="img/logo/twitter.png" alt="" class="d-block mx-auto" />
+                                    </a>
+                                 </div>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-8 col-md-6 col-lg-3 social-info-people">
+                  <div class="info">
+                     <img src="img/people/people2.png" alt="chef2" class="mx-auto d-block mb-2" height="200px" />
+                     <div class="name">
+                        <p class="font-weight-bold">Nguyen Bich Ha</p>
+                        <p>Sous chef</p>
+                     </div>
+                     <div class="social">
+                        <ul class="d-flex">
+                           <li>
+                              <div class="box">
+                                 <a href="#" class="text-center">
+                                    <img src="img/logo/facebook.png" alt="" class="d-block mx-auto" />
+                                 </a>
+                              </div>
+                           </li>
+                           <li>
+                              <div class="box">
+                                 <a href="#">
+                                    <img src="img/logo/instagram.png" alt="" class="d-block mx-auto" />
+                                 </a>
+                              </div>
+                           </li>
+                           <li>
+                              <div class="box">
+                                 <a href="#">
+                                    <img src="img/logo/twitter.png" alt="" class="d-block mx-auto" />
+                                 </a>
+                              </div>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-8 col-md-6 col-lg-3 social-info-people">
+                  <div class="info">
+                     <img src="img/people/people3.png" alt="chef3" class="mx-auto d-block mb-2" height="200px" />
+                     <div class="name">
+                        <p class="font-weight-bold">Pham Huy Hoang</p>
+                        <p>Kitchen assistant</p>
+                     </div>
+                     <div class="social">
+                        <ul class="d-flex">
+                           <li>
+                              <div class="box">
+                                 <a href="#" class="text-center">
+                                    <img src="img/logo/facebook.png" alt="" class="d-block mx-auto" />
+                                 </a>
+                              </div>
+                           </li>
+                           <li>
+                              <div class="box">
+                                 <a href="#">
+                                    <img src="img/logo/instagram.png" alt="" class="d-block mx-auto" />
+                                 </a>
+                              </div>
+                           </li>
+                           <li>
+                              <div class="box">
+                                 <a href="#">
+                                    <img src="img/logo/twitter.png" alt="" class="d-block mx-auto" />
+                                 </a>
+                              </div>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-8 col-md-6 col-lg-3 social-info-people">
+                  <div class="info">
+                     <img src="img/people/people4.png" alt="chef4" class="mx-auto d-block mb-2" height="200px" />
+                     <div class="name">
+                        <p class="font-weight-bold">Hoang Thanh Nha</p>
+                        <p>Chef</p>
+                     </div>
+                     <div class="social">
+                        <ul class="d-flex">
+                           <li>
+                              <div class="box">
+                                 <a href="#" class="text-center">
+                                    <img src="img/logo/facebook.png" class="d-block mx-auto" />
+                                 </a>
+                              </div>
+                           </li>
+                           <li>
+                              <div class="box">
+                                 <a href="#">
+                                    <img src="img/logo/instagram.png" alt="" class="d-block mx-auto" />
+                                 </a>
+                              </div>
+                           </li>
+                           <li>
+                              <div class="box">
+                                 <a href="#">
+                                    <img src="img/logo/twitter.png" alt="" class="d-block mx-auto" />
+                                 </a>
+                              </div>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
             </div>
-          </div>
-          <div data-aos="fade-left" data-aos-easing="ease-in-sine" data-aos-delay="200" data-aos-duration="2500" class="col-9 col-md-6 col-lg-4">
-            <div class="criterion-style">
-              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-car mt-2" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00abfb" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                <circle cx="7" cy="17" r="2" />
-                <circle cx="17" cy="17" r="2" />
-                <path d="M5 17h-2v-6l2 -5h9l4 5h1a2 2 0 0 1 2 2v4h-2m-4 0h-6m-6 -6h15m-6 0v-5" />
-              </svg>
-              <div class="criterion-info">
-                <p class="mt-2 font-weight-bolder order-number">04</p>
-                <p class="font-weight-bolder">Door-to-door food delivery service</p>
-                <span class="font-weight-normal"
-                  >Our store accepts orders according to the menu that you choose directly via hotline 0978266712  
-                </span>
-              </div>
-            </div>
-          </div>
-          <div data-aos="fade-left" data-aos-easing="ease-in-sine" data-aos-delay="200" data-aos-duration="2000" class="col-9 col-md-6 col-lg-4">
-            <div class="criterion-style">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="icon icon-tabler icon-tabler-meat mt-2"
-                width="44"
-                height="44"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="#00abfb"
-                fill="none"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                <path
-                  d="M13.62 8.382l1.966 -1.967a2 2 0 1 1 3.414 -1.415a2 2 0 1 1 -1.413 3.414l-1.82 1.821"
-                />
-                <ellipse
-                  transform="rotate(45 8.025 16.475)"
-                  cx="8.025"
-                  cy="16.475"
-                  rx="7"
-                  ry="3"
-                />
-                <path d="M7.5 16l1 1" />
-                <path
-                  d="M12.975 21.425c3.905 -3.906 4.855 -9.288 2.121 -12.021c-2.733 -2.734 -8.115 -1.784 -12.02 2.121"
-                />
-              </svg>
-              <div class="criterion-info">
-                <p class="mt-2 font-weight-bolder order-number">05</p>
-                <p class="font-weight-bolder">Direct catering</p>
-                <span class="font-weight-normal"
-                  >Customers will come directly to the restaurant and be served by our staff with the best quality of service
-                </span>
-              </div>
-            </div>
-          </div>
-          <div data-aos="fade-left" data-aos-easing="ease-in-sine" data-aos-delay="200" data-aos-duration="1500" class="col-9 col-md-6 col-lg-4">
-            <div class="criterion-style">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="icon icon-tabler icon-tabler-eye-check mt-2"
-                width="44"
-                height="44"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="#00abfb"
-                fill="none"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                <circle cx="12" cy="12" r="2" />
-                <path
-                  d="M12 19c-4 0 -7.333 -2.333 -10 -7c2.667 -4.667 6 -7 10 -7s7.333 2.333 10 7c-.42 .736 -.858 1.414 -1.311 2.033"
-                />
-                <path d="M15 19l2 2l4 -4" />
-              </svg>
-              <div class="criterion-info">
-                <p class="mt-2 font-weight-bolder order-number">06</p>
-                <p class="font-weight-bolder">Bar area</p>
-                <span class="font-weight-normal"
-                >If the customer finishes eating and wants to drink, you can come to our bar in a variety of categories.
-              </span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- why choose us -->
-    <section id="why-choose-us" class="container">
-      <div class="row">
-        <div class="col-12 col-md-6">
-          <div>
-            <h4 class="font-weight-bold">What Midnight Restaurant have ?</h4>
-            <ul>
-              <li>
-                <h5>10 years of experience</h5>
-                <p>
-                    With more than 10 years in maintaining the restaurant, we will bring you the darkest experience ever.
-                </p>
-              </li>
-              <li>
-                <h5>High ability to learn</h5>
-                <p>
-                    The attitude is always hard to learn, have the will to strive at work, receive the opinions of customers and do not be afraid of difficulties.
-                </p>
-              </li>
-              <li>
-                <h5>Beautiful view</h5>
-                <p>
-                    With airy space, super shimmering so that you can enjoy posing and owning for yourself the most impressive virtual life photos. 
-                </p>
-              </li>
-            </ul>
-            <div class="li-style-1 li-style"><p>01</p></div>
-            <div class="li-style-2 li-style"><p>02</p></div>
-            <div class="li-style-3 li-style"><p>03</p></div>
-          </div>
-        </div>
-        <div data-aos="flip-up" data-aos-delay="200" data-aos-duration="1000" class="chef1 col-12 col-md-6">
-          <img
-            src="img/people/chef.jpg"
-            alt="my perfect chef of us"
-            class="img-fluid"
-          />
-        </div>
-      </div>
-    </section>
-    <!-- about us -->
-    <section id="about-us">
-      <div class="container">
-        <div class="row align-items-center justify-content-center">
-          <div class="col-12">
-            <div class="text-center">
-              <span class="rainbow-text">About us</span>
-              <h4 class="font-weight-bold">Meet the people behind the delicious food of our restaurant</h4>
-            </div>
-          </div>
-          <div data-aos="zoom-out-down" data-aos-easing="linear" data-aos-duration="1000" data-aos-delay="200" class="col-8 col-md-6 col-lg-3 social-info-people">
-          <div class="info-people">
-            <div class="info">
-              <img
-                src="img/people/people.png"
-                alt="chef1"
-                class="mx-auto d-block mb-2"
-                height="200px"
-              />
-              <div class="name">
-                <p class="font-weight-bold">Tran Anh Dung</p>
-                <p>Chef</p>
-              </div>
-              <div class="social">
-                <ul class="d-flex">
-                  <li>
-                    <div class="box">
-                      <a href="#">
-                        <img
-                          src="img/logo/facebook.png"
-                          alt=""
-                          class="d-block mx-auto"
-                        />
-                      </a>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="box">
-                      <a href="#">
-                        <img
-                          src="img/logo/instagram.png"
-                          alt=""
-                          class="d-block mx-auto"
-                        />
-                      </a>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="box">
-                      <a href="#">
-                        <img
-                          src="img/logo/twitter.png"
-                          alt=""
-                          class="d-block mx-auto"
-                        />
-                      </a>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          </div>
-          <div data-aos="zoom-out-down" data-aos-easing="linear" data-aos-duration="1000" data-aos-delay="200" class="col-8 col-md-6 col-lg-3 social-info-people">
-            <div class="info">
-              <img
-                src="img/people/people2.png"
-                alt="chef2"
-                class="mx-auto d-block mb-2"
-                height="200px"
-              />
-              <div class="name">
-                <p class="font-weight-bold">Nguyen Bich Ha</p>
-                <p>Sous chef</p>
-              </div>
-              <div class="social">
-                <ul class="d-flex">
-                  <li>
-                    <div class="box">
-                      <a href="#" class="text-center">
-                        <img
-                          src="img/logo/facebook.png"
-                          alt=""
-                          class="d-block mx-auto"
-                        />
-                      </a>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="box">
-                      <a href="#">
-                        <img
-                          src="img/logo/instagram.png"
-                          alt=""
-                          class="d-block mx-auto"
-                        />
-                      </a>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="box">
-                      <a href="#">
-                        <img
-                          src="img/logo/twitter.png"
-                          alt=""
-                          class="d-block mx-auto"
-                        />
-                      </a>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            
-          </div>
-          <div data-aos="zoom-out-down" data-aos-easing="linear" data-aos-duration="1000" data-aos-delay="200" class="col-8 col-md-6 col-lg-3 social-info-people">
-            <div class="info">
-              <img
-                src="img/people/people3.png"
-                alt="chef3"
-                class="mx-auto d-block mb-2"
-                height="200px"
-              />
-              <div class="name">
-                <p class="font-weight-bold">Pham Huy Hoang</p>
-                <p>Kitchen assistant</p>
-              </div>
-              <div class="social">
-                <ul class="d-flex">
-                  <li>
-                    <div class="box">
-                      <a href="#" class="text-center">
-                        <img
-                          src="img/logo/facebook.png"
-                          alt=""
-                          class="d-block mx-auto"
-                        />
-                      </a>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="box">
-                      <a href="#">
-                        <img
-                          src="img/logo/instagram.png"
-                          alt=""
-                          class="d-block mx-auto"
-                        />
-                      </a>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="box">
-                      <a href="#">
-                        <img
-                          src="img/logo/twitter.png"
-                          alt=""
-                          class="d-block mx-auto"
-                        />
-                      </a>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div data-aos="zoom-out-down" data-aos-easing="linear" data-aos-duration="1000" data-aos-delay="200" class="col-8 col-md-6 col-lg-3 social-info-people">
-            <div class="info">
-              <img
-                src="img/people/people4.png"
-                alt="chef4"
-                class="mx-auto d-block mb-2"
-                height="200px"
-              />
-              <div class="name">
-                <p class="font-weight-bold">Hoang Thanh Nha</p>
-                <p>Chef</p>
-              </div>
-              <div class="social">
-                <ul class="d-flex">
-                  <li>
-                    <div class="box">
-                      <a href="#" class="text-center">
-                        <img
-                          src="img/logo/facebook.png"
-                          class="d-block mx-auto"
-                        />
-                      </a>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="box">
-                      <a href="#">
-                        <img
-                          src="img/logo/instagram.png"
-                          alt=""
-                          class="d-block mx-auto"
-                        />
-                      </a>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="box">
-                      <a href="#">
-                        <img
-                          src="img/logo/twitter.png"
-                          alt=""
-                          class="d-block mx-auto"
-                        />
-                      </a>
-                    </div>
-                  </li>
-                </ul>
-                </div>
-              </div>
-            </div>
-        </div>
-      </div>
-    </section>
+         </div>
+      </section>
       <!-- comment -->
-        <section id="commnent">
-          <div class="container">
+      <section id="commnent">
+         <div class="container">
             <div class="text-center">
-              <span class="rainbow-text">Rating</span>
-              <h4 class="pb-4 font-weight-bold">Some customer comments about our restaurant</h4>
+               <span class="rainbow-text">Rating</span>
+               <h4 class="pb-4 font-weight-bold">Some customer comments about our restaurant</h4>
             </div>
             <div class="carousel row">
-              <div class="col-12 col-md-4">
-                <div class="carousel-comment">
-                  <img src="img/customer/customer1.jpeg" alt="customer1" />
-                  <div class="text-comment">
-                    <a href="#">Tran Gia Duc</a><br />
-                    <span><i class="uis uis-star checked"></i></span>
-                    <span><i class="uis uis-star checked"></i></span>
-                    <span><i class="uis uis-star checked"></i></span>
-                    <span><i class="uis uis-star checked"></i></span>
-                    <span><i class="uis uis-star checked"></i></span>
-                    <p>
-                        Excellent service quality, the menu has a lot of choices for both vegetarian and vegan dishes. The quality of the food and the way it is prepared are very creative. Smoothie drinks and juices are great. It's worth it.
-                    </p>
+               <div class="col-12 col-md-4">
+                  <div class="carousel-comment">
+                     <img src="img/customer/customer1.jpeg" alt="customer1" />
+                     <div class="text-comment">
+                        <a href="#">Tran Gia Duc</a><br />
+                        <span><i class="uis uis-star checked"></i></span>
+                        <span><i class="uis uis-star checked"></i></span>
+                        <span><i class="uis uis-star checked"></i></span>
+                        <span><i class="uis uis-star checked"></i></span>
+                        <span><i class="uis uis-star checked"></i></span>
+                        <p>
+                           Excellent service quality, the menu has a lot of choices for both vegetarian and vegan
+                           dishes. The quality of the food and the way it is prepared are very creative. Smoothie drinks
+                           and juices are great. It's worth it.
+                        </p>
+                     </div>
                   </div>
-                </div>
-              </div>
-              <div class="col-12 col-md-4">
-                <div class="carousel-comment">
-                  <img src="img/customer/customer2.jpg" alt="customer1" />
-                  <div class="text-comment">
-                    <a href="#">Le Hoai An</a><br />
-                    <span><i class="uis uis-star checked"></i></span>
-                    <span><i class="uis uis-star checked"></i></span>
-                    <span><i class="uis uis-star checked"></i></span>
-                    <span><i class="uis uis-star checked"></i></span>
-                    <span><i class="uis uis-star checked"></i></span>
-                    <p>
-                    Entering the restaurant is like setting foot on a small oasis of beauty and tranquility. Friendly staff, quick service. The menu is varied and every dish sounds attractive.
-                    </p>
+               </div>
+               <div class="col-12 col-md-4">
+                  <div class="carousel-comment">
+                     <img src="img/customer/customer2.jpg" alt="customer1" />
+                     <div class="text-comment">
+                        <a href="#">Le Hoai An</a><br />
+                        <span><i class="uis uis-star checked"></i></span>
+                        <span><i class="uis uis-star checked"></i></span>
+                        <span><i class="uis uis-star checked"></i></span>
+                        <span><i class="uis uis-star checked"></i></span>
+                        <span><i class="uis uis-star checked"></i></span>
+                        <p>
+                           Entering the restaurant is like setting foot on a small oasis of beauty and tranquility.
+                           Friendly staff, quick service. The menu is varied and every dish sounds attractive.
+                        </p>
+                     </div>
                   </div>
-                </div>
-              </div>
-              <div class="col-12 col-md-4">
-                <div class="carousel-comment" >
-                  <img src="img/customer/customer3.jpg" alt="customer1" />
-                  <div class="text-comment">
-                    <a href="#">Hoang Nhat An</a><br />
-                    <span><i class="uis uis-star checked"></i></span>
-                    <span><i class="uis uis-star checked"></i></span>
-                    <span><i class="uis uis-star checked"></i></span>
-                    <span><i class="uis uis-star checked"></i></span>
-                    <span><i class="uis uis-star checked"></i></span>
-                    <p>
-                    The service was great. The dishes presented are very beautiful, fresh and delicious. The restaurant is clean and the design style is also very beautiful.
-                    </p>
+               </div>
+               <div class="col-12 col-md-4">
+                  <div class="carousel-comment">
+                     <img src="img/customer/customer3.jpg" alt="customer1" />
+                     <div class="text-comment">
+                        <a href="#">Hoang Nhat An</a><br />
+                        <span><i class="uis uis-star checked"></i></span>
+                        <span><i class="uis uis-star checked"></i></span>
+                        <span><i class="uis uis-star checked"></i></span>
+                        <span><i class="uis uis-star checked"></i></span>
+                        <span><i class="uis uis-star checked"></i></span>
+                        <p>
+                           The service was great. The dishes presented are very beautiful, fresh and delicious. The
+                           restaurant is clean and the design style is also very beautiful.
+                        </p>
+                     </div>
                   </div>
-                </div>
-              </div>
-              <div class="col-12 col-md-4">
-                <div class="carousel-comment">
-                  <img src="img/customer/customer4.jpg" alt="customer1" />
-                  <div class="text-comment">
-                    <a href="#">Tran Duy Duc</a><br />
-                    <span><i class="uis uis-star checked"></i></span>
-                    <span><i class="uis uis-star checked"></i></span>
-                    <span><i class="uis uis-star checked"></i></span>
-                    <span><i class="uis uis-star checked"></i></span>
-                    <span><i class="uis uis-star checked"></i></span>
-                    <p>
-                        Fresh and delicious ingredients with the characteristic taste of the restaurant. The staff is very friendly. Especially encouraged for vegetarians like us.
-                    </p>
+               </div>
+               <div class="col-12 col-md-4">
+                  <div class="carousel-comment">
+                     <img src="img/customer/customer4.jpg" alt="customer1" />
+                     <div class="text-comment">
+                        <a href="#">Tran Duy Duc</a><br />
+                        <span><i class="uis uis-star checked"></i></span>
+                        <span><i class="uis uis-star checked"></i></span>
+                        <span><i class="uis uis-star checked"></i></span>
+                        <span><i class="uis uis-star checked"></i></span>
+                        <span><i class="uis uis-star checked"></i></span>
+                        <p>
+                           Fresh and delicious ingredients with the characteristic taste of the restaurant. The staff is
+                           very friendly. Especially encouraged for vegetarians like us.
+                        </p>
+                     </div>
                   </div>
-                </div>
-              </div>
-              <div class="col-12 col-md-4">
-                <div class="carousel-comment">
-                  <img src="img/customer/customer5.jpg!s" alt="customer1" />
-                  <div class="text-comment">
-                    <a href="#">Cao Ba Quat</a><br/>
-                    <span><i class="uis uis-star checked"></i></span>
-                    <span><i class="uis uis-star checked"></i></span>
-                    <span><i class="uis uis-star checked"></i></span>
-                    <span><i class="uis uis-star checked"></i></span>
-                    <span><i class="uis uis-star checked"></i></span>
-                    <p>
-                        The restaurant not only offers creative and delicious dishes, but also has a cozy space, which is a special feature that you can't find anywhere else.
-                    </p>
+               </div>
+               <div class="col-12 col-md-4">
+                  <div class="carousel-comment">
+                     <img src="img/customer/customer5.jpg!s" alt="customer1" />
+                     <div class="text-comment">
+                        <a href="#">Cao Ba Quat</a><br />
+                        <span><i class="uis uis-star checked"></i></span>
+                        <span><i class="uis uis-star checked"></i></span>
+                        <span><i class="uis uis-star checked"></i></span>
+                        <span><i class="uis uis-star checked"></i></span>
+                        <span><i class="uis uis-star checked"></i></span>
+                        <p>
+                           The restaurant not only offers creative and delicious dishes, but also has a cozy space,
+                           which is a special feature that you can't find anywhere else.
+                        </p>
+                     </div>
                   </div>
-                </div>
-              </div>
-              <div class="col-12 col-md-4">
-                <div class="carousel-comment">
-                  <img src="img/customer/customer6.jpg" alt="customer1" />
-                  <div class="text-comment">
-                    <a href="#">Dao Thi Hong Diem</a><br />
-                    <span><i class="uis uis-star checked"></i></span>
-                    <span><i class="uis uis-star checked"></i></span>
-                    <span><i class="uis uis-star checked"></i></span>
-                    <span><i class="uis uis-star checked"></i></span>
-                    <span><i class="uis uis-star checked"></i></span>
-                    <p>
-                     The dish is quite unique and delicious, with an aesthetic decoration style, which will make you remember forever when eating here.
-                    </p>
+               </div>
+               <div class="col-12 col-md-4">
+                  <div class="carousel-comment">
+                     <img src="img/customer/customer6.jpg" alt="customer1" />
+                     <div class="text-comment">
+                        <a href="#">Dao Thi Hong Diem</a><br />
+                        <span><i class="uis uis-star checked"></i></span>
+                        <span><i class="uis uis-star checked"></i></span>
+                        <span><i class="uis uis-star checked"></i></span>
+                        <span><i class="uis uis-star checked"></i></span>
+                        <span><i class="uis uis-star checked"></i></span>
+                        <p>
+                           The dish is quite unique and delicious, with an aesthetic decoration style, which will make
+                           you remember forever when eating here.
+                        </p>
+                     </div>
                   </div>
-                </div>
-              </div>
+               </div>
             </div>
-          </div>
-        </section>
+         </div>
+      </section>
 
-        <!-- FAQ -->
-        <section id="FAQ">
-          <div class="container">
+      <!-- FAQ -->
+      <section id="FAQ">
+         <div class="container">
             <div id="faq-accordion" class="row justify-content-center align-items-center">
-              <div class="col-12 text-center">
-                <span class="rainbow-text">FAQ</span>
-                <h4 class="font-weight-bold">Questions that customers often ask.</h4>
-              </div>
-              <div data-aos="fade-up-right" data-aos-easing="ease-in-sine" data-aos-delay="200" data-aos-duration="1500" class="col-12 col-md-9">
-                <div class="accordion">
-                  <div class="accordion-header font-weight-bold">How is the store's equipment?</div>
-                  <div class="accordion-content "><p>Our store always checks whether the items as well as tables and chairs are enough, whether any one is broken, fully cleaned to prepare for what is best for customers.</p> 
+               <div class="col-12 text-center">
+                  <span class="rainbow-text">FAQ</span>
+                  <h4 class="font-weight-bold">Questions that customers often ask.</h4>
+               </div>
+               <div class="col-12 col-md-9">
+                  <div class="accordion">
+                     <div class="accordion-header font-weight-bold">How is the store's equipment?</div>
+                     <div class="accordion-content">
+                        <p>
+                           Our store always checks whether the items as well as tables and chairs are enough, whether
+                           any one is broken, fully cleaned to prepare for what is best for customers.
+                        </p>
+                     </div>
                   </div>
-                </div>
-              </div>
-              <div data-aos="fade-up-left" data-aos-easing="ease-in-sine" data-aos-delay="200" data-aos-duration="1500" class="col-12 col-md-9">
-                <div class="accordion">
-                  <div class="accordion-header font-weight-bold">Is food proven?</div>
-                  <div class="accordion-content ">
-                   <p>Our food is certified from ISO 22000, which is the first international standard to implement a certified food safety management system. It includes interactive communication, system management and hazard control.</p>
+               </div>
+               <div class="col-12 col-md-9">
+                  <div class="accordion">
+                     <div class="accordion-header font-weight-bold">Is food proven?</div>
+                     <div class="accordion-content">
+                        <p>
+                           Our food is certified from ISO 22000, which is the first international standard to implement
+                           a certified food safety management system. It includes interactive communication, system
+                           management and hazard control.
+                        </p>
+                     </div>
                   </div>
-                </div>
-              </div>
-              <div data-aos="fade-up-right" data-aos-easing="ease-in-sine" data-aos-delay="200" data-aos-duration="1500" class="col-12 col-md-9">
-                <div class="accordion">
-                  <div class="accordion-header font-weight-bold">What about the quality of service?</div>
-                  <div class="accordion-content ">
-                    <p>
-                      As above, we have 10 years of experience so customers do not need to worry about the waiting time for food, the quality of service as well as the service process of the restaurant.
-                    </p>
+               </div>
+               <div class="col-12 col-md-9">
+                  <div class="accordion">
+                     <div class="accordion-header font-weight-bold">What about the quality of service?</div>
+                     <div class="accordion-content">
+                        <p>
+                           As above, we have 10 years of experience so customers do not need to worry about the waiting
+                           time for food, the quality of service as well as the service process of the restaurant.
+                        </p>
+                     </div>
                   </div>
-                </div>
-              </div>
-              <div data-aos="fade-up-left" data-aos-easing="ease-in-sine" data-aos-delay="200" data-aos-duration="1500" class="col-12 col-md-9">
-                <div class="accordion">
-                  <div class="accordion-header font-weight-bold">Does the restaurant recommend people who have been eating here for a long time?</div>
-                  <div class="accordion-content ">
-                    <p>
-                      Not only are there promotions, but we also have free gift offerings on special occasions for customers who have eaten here for a long time, customers can ask for more details when our waiter arrives they will explain the details to customers more.
-                    </p>
+               </div>
+               <div class="col-12 col-md-9">
+                  <div class="accordion">
+                     <div class="accordion-header font-weight-bold">
+                        Does the restaurant recommend people who have been eating here for a long time?
+                     </div>
+                     <div class="accordion-content">
+                        <p>
+                           Not only are there promotions, but we also have free gift offerings on special occasions for
+                           customers who have eaten here for a long time, customers can ask for more details when our
+                           waiter arrives they will explain the details to customers more.
+                        </p>
+                     </div>
                   </div>
-                </div>
-              </div>
+               </div>
             </div>
-          </div>
-        </section>
+         </div>
+      </section>
       <!-- subscribe -->
       <section id="subscribe">
-        <div class="container">
-          <div class="row justify-content-center align-items-center">
-            <div class="col-12 col-md-8 text-center">
-              <div class="subscribe-text">
-                <span class="rainbow-text">Subscribe</span>
-                <h4 class="mb-3">Sign up to get the <br> earliest notifications about our restaurant updates</h4>
-              </div>
+         <div class="container">
+            <div class="row justify-content-center align-items-center">
+               <div class="col-12 col-md-8 text-center">
+                  <div class="subscribe-text">
+                     <span class="rainbow-text">Subscribe</span>
+                     <h4 class="mb-3">
+                        Sign up to get the <br />
+                        earliest notifications about our restaurant updates
+                     </h4>
+                  </div>
+               </div>
+               <div class="col-12 col-md-8">
+                  <div class="input-sub d-flex align-items-center justify-content-center">
+                     <input class="input-text" type="text" placeholder="eg : abcxyz@gmail.com" />
+                     <button class="button-sub" onclick="rcm()">Subscribe</button>
+                  </div>
+               </div>
             </div>
-            <div class="col-12 col-md-8">
-            <div class="input-sub d-flex align-items-center justify-content-center">
-              <input class="input-text" type="text" placeholder="eg : abcxyz@gmail.com"/>
-              <button class="button-sub" onclick="rcm()">Đăng kí</button>
-            </div>
-           </div>
-          </div>
-        </div>
+         </div>
       </section>
       <!-- footer -->
       <footer id="contract">
-        <div class="container">
-          <div class="row justify-content-between align-items-center">
-            <div class="mt-3 col-12 col-md-6 order-1 order-md-0">
-              <div class="text-footer">
-                <h3 class="font-weight-bold">Midnight Restaurant</h3>
-                <p>Address: 103 - Linh Duong - Hoang Liet - Hoang Mai - Ha Noi <br>
-                  Hotline : 0978266712 <br>
-                  Fax : +84 (8) 3823 3318
-                </p>
-                <p>© 2022 MidNight Restaurant</p>
-              </div>
+         <div class="container">
+            <div class="row justify-content-between align-items-center">
+               <div class="mt-3 col-12 col-md-6 order-1 order-md-0">
+                  <div class="text-footer">
+                     <h3 class="font-weight-bold">Midnight Restaurant</h3>
+                     <p>
+                        Address: 103 - Linh Duong - Hoang Liet - Hoang Mai - Ha Noi <br />
+                        Hotline : 0978266712 <br />
+                        Fax : +84 (8) 3823 3318
+                     </p>
+                     <p>© 2022 MidNight Restaurant</p>
+                  </div>
+               </div>
+               <div class="mt-3 col-12 col-md-6 order-0 order-md-1">
+                  <div class="social-restaurant text-center">
+                     <p class="pl-4 font-weight-bold"><span>MidNight Restaurant </span>on social media</p>
+                     <ul>
+                        <li>
+                           <div class="social-box">
+                              <a href="#"
+                                 ><img class="d-inline-block mx-auto" src="./img/logo/facebook.png" alt=""
+                              /></a>
+                           </div>
+                        </li>
+                        <li>
+                           <div class="social-box">
+                              <a href="https://github.com/Fuuyu" target="_blank"
+                                 ><img
+                                    class="d-inline-block mx-auto"
+                                    src="./img/logo/github-pngrepo-com.png"
+                                    alt=""
+                                    width="24px"
+                                    height="24px"
+                              /></a>
+                           </div>
+                        </li>
+                        <li>
+                           <div class="social-box">
+                              <a href="#"
+                                 ><img class="d-inline-block mx-auto" src="./img/logo/instagram.png" alt=""
+                              /></a>
+                           </div>
+                        </li>
+                        <li>
+                           <div class="social-box">
+                              <a href="#"><img class="d-inline-block mx-auto" src="./img/logo/twitter.png" alt="" /></a>
+                           </div>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
             </div>
-            <div class="mt-3 col-12 col-md-6 order-0 order-md-1">
-              <div class="social-restaurant text-center">
-                <p class="pl-4 font-weight-bold"><span>MidNight Restaurant </span>on social media</p>
-                <ul>
-                  <li>
-                    <div class="social-box">
-                      <a href="#"><img class="d-inline-block mx-auto" src="./img/logo/facebook.png" alt=""></a>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="social-box">
-                      <a href="https://github.com/Fuuyu" target="_blank"><img class="d-inline-block mx-auto" src="./img/logo/github-pngrepo-com.png" alt="" width="24px" height="24px"></a>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="social-box">
-                      <a href="#"><img class="d-inline-block mx-auto" src="./img/logo/instagram.png" alt=""></a>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="social-box">
-                      <a href="#"><img class="d-inline-block mx-auto" src="./img/logo/twitter.png" alt=""></a>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
+         </div>
       </footer>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init();
-      AOS.refresh();
-    </script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
-    ></script>
-    <script src="main.js"></script>
-  </body>
+      <script
+         src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+         crossorigin="anonymous"
+      ></script>
+      <script
+         src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+         integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+         crossorigin="anonymous"
+      ></script>
+      <script
+         type="text/javascript"
+         src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+      ></script>
+      <script src="main.js"></script>
+   </body>
 </html>
